@@ -1,4 +1,4 @@
-const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NGRlMGRmMzk0OGRlZjU0ZTJkYTEyNWIxYWEyMmFlMyIsIm5iZiI6MTc0NjA0NjE0Mi44NjgsInN1YiI6IjY4MTI4Y2JlZGVkODMwMjlhYzA1NTI3MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.T2G1UWdAZI6tdk175QHtdyeGr3iaWAgOoL4mNeBc6JY'; // Sostituisci con la tua chiave API di TMDb
+const API_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NGRlMGRmMzk0OGRlZjU0ZTJkYTEyNWIxYWEyMmFlMyIsIm5iZiI6MTc0NjA0NjE0Mi44NjgsInN1YiI6IjY4MTI4Y2JlZGVkODMwMjlhYzA1NTI3MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.T2G1UWdAZI6tdk175QHtdyeGr3iaWAgOoL4mNeBc6JY'; 
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const SEARCH_URL = `${BASE_URL}/search/movie?api_key=${API_KEY}&language=en-US&query=`;
@@ -24,16 +24,12 @@ let index = 1;
             
             const movies = data.results.slice(0, 10);
             
-            // Crea il wrapper per le card
             const wrapper = document.createElement('div');
             wrapper.classList.add('card-wrapper');
             
-            // Crea il primo set di card
             movies.forEach(movie => createCard(movie, wrapper));
-            // Duplica le card per l'effetto infinito
             movies.forEach(movie => createCard(movie, wrapper));
             
-            // Aggiungi il wrapper al contenitore
             const list = document.getElementById('list');
             list.innerHTML = '';
             list.appendChild(wrapper);
@@ -50,9 +46,11 @@ let index = 1;
           card.classList.add('card-item');
           
           const templateCard = `
-            <img src="${posterUrl}" alt="${movie.title}" style="max-width: 300px;border-radius: 10px;">
+          <a href="film.html?id=${movie.id}">
+            <img src="${posterUrl}" alt="${movie.title}" style="width: 20vw; border-radius: 10px;">
             <h3 class="titolo-card">${movie.title}</h3>
             <p class="testo-card">${movie.overview}</p>
+          </a>
           `;
           
           card.innerHTML = templateCard;

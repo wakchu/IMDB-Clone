@@ -9,7 +9,7 @@ function getMovieIdFromUrl() {
 }
 const movie_id = getMovieIdFromUrl();
 
-  const options = {
+const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',

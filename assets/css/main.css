@@ -198,6 +198,9 @@ section h2 {
   margin-left: 2em;
 }
 
+footer {
+  background-color: var(--background-light);
+}
 
 
 /* Media queries per schermi di diverse dimensioni */

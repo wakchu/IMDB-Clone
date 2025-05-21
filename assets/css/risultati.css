@@ -1,0 +1,26 @@
+.card-wrapper-results {
+  display: flex;
+  gap: var(--gap-size);
+}
+
+.card-item-results {
+  flex: 0 0 auto;
+  width: 20vw;
+  padding: var(--header-padding);
+  background-color: var(--background-light);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+#results-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: var(--header-padding);
+}

@@ -58,10 +58,20 @@ let index = 1;
         }
         
         getDataCard();
-// searchButton.addEventListener('click', searchMovies);
-// searchInput.addEventListener('keypress', function(e) {
-//     if (e.key === 'Enter') {
-//         searchMovies();
-//         }
-//     }
-// );
+      
+      const searchInput =  document.getElementById("search-input");
+      searchInput.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+              e.preventDefault();
+              const query = searchInput.value;
+              window.location.href = `risultati.html?query=${query}`;
+              console.log('Enter key pressed');
+          }
+      });
+      const searchButton = document.getElementById("search-button");
+      function searchMovies() {
+        const query = searchInput.value;
+        window.location.href = `risultati.html?query=${query}`;
+        console.log('Search button clicked');
+      }
+      searchButton.addEventListener('click', searchMovies);

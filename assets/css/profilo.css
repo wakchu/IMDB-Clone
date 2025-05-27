@@ -1,4 +1,19 @@
-.card-wrapper-results {
+html, body {
+  height: 100%;          
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;     
+}
+
+main {
+  flex: 1;               
+}
+
+.movies-grid {
   display: flex;
   gap: var(--gap-size);
 }
@@ -20,13 +35,13 @@
 .card-item-results:hover {
     transform: translateY(-5px);
     background-color: #252542;
-    cursor: pointer;
 }
 
-#results-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  padding: var(--header-padding);
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    padding: 20px;
+    color: var(--text-color);
 }

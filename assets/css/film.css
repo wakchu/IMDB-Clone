@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;          
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;     
+}
+
+main {
+  flex: 1;               
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-favorite,
+.btn-watchlist {
+    display: flex;
+    align-items: center;
+  background: var(--primary-color);
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-favorite:hover,
+.btn-watchlist:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-favorite.active {
+  background-color: #ff4757;
+}
+
+.btn-watchlist.active {
+  background-color: #2ed573;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.icon{
+    width: 150%;
+    height: auto;
+    object-fit: cover;
+
+}

@@ -125,6 +125,7 @@ a{
 }
 
 .card-item:hover {
+   transform: translateY(-5px);
   background-color: #252542;
   cursor: pointer;
 }
@@ -174,7 +175,7 @@ section {
 }
 
 section h2 {
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: 20px;
   font-size: 1.8rem;
   border-bottom: 2px solid var(--secondary-color);
@@ -200,10 +201,19 @@ section h2 {
 
 footer {
   background-color: var(--background-light);
+  padding: 40px var(--header-padding);
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
 
-/* Media queries per schermi di diverse dimensioni */
 @media screen and (max-width: 1440px) {
   :root {
     --card-width: 280px;
@@ -306,6 +316,10 @@ footer {
 
   section h2 {
     font-size: 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
   }
 }
 

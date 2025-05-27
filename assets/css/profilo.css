@@ -16,6 +16,7 @@ main {
 .movies-grid {
   display: flex;
   gap: var(--gap-size);
+  flex-wrap: wrap;
 }
 
 .card-item-results {
@@ -35,6 +36,7 @@ main {
 .card-item-results:hover {
     transform: translateY(-5px);
     background-color: #252542;
+    cursor: pointer;
 }
 
 section {

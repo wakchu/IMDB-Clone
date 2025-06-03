@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FilmLog</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/fonts/icone/css/user.css">
-    <link rel="stylesheet" href="assets/css/film.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/fonts/icone/css/user.css" />
+    <link rel="stylesheet" href="assets/css/film.css" />
+  </head>
+  <body>
     <div class="wrapper">
-    <header class="site-header">
-        <a href="index.html" title="Ricarica la pagina"> 
-            <img src="assets/images/logo filmlog.png" class="site-logo" alt="logo" > 
+      <header class="site-header">
+        <a href="index.html" title="Ricarica la pagina">
+          <img
+            src="assets/images/logo filmlog.png"
+            class="site-logo"
+            alt="logo"
+          />
         </a>
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="Cerca un film...">
-            <button id="search-button">Cerca</button>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Cerca un film..."
+          />
+          <button id="search-button">Cerca</button>
         </div>
-        <a href="profilo.html" class="tasto-profilo"><span class="icon-user"></span> </a>
-    </header>
+        <a href="profilo.html" class="tasto-profilo">
+          <span class="icon-user"></span>
+        </a>
+      </header>
 
-    <main>
+      <main>
         <section class="film" id="filmOverview"></section>
         <section id="bottoni"></section>
-    </main>
-        <footer>
-        <div class="footer-content">
-            <p>FilmLog &copy; 2025</p>
-            <p>Realizzato da Bordoni Stefano</p>
-        </div>
-    </footer>
-    <script src="assets/scripts/film.js"></script>
-</body>
-    </div>
-</html>
+      </main>
 
+      <footer>
+        <div class="footer-content">
+          <p>FilmLog &copy; 2025</p>
+          <p>Realizzato da Bordoni Stefano</p>
+        </div>
+      </footer>
+
+      <script src="assets/scripts/film.js"></script>
+    </div>
+  </body>
+</html>

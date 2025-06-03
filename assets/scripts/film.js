@@ -27,7 +27,6 @@ async function getData() {
       
       data = await response.json();
       
-      // Controlla se il film è già nei preferiti/watchlist
       const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
       const watchlist = JSON.parse(localStorage.getItem('watchlist') || '[]');
       const isFavorite = favorites.some(f => f.id === data.id);

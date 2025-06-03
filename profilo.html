@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FilmLog</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/fonts/icone/css/user.css">
-    <link rel="stylesheet" href="assets/css/profilo.css">
-</head>
-<body>
-    <div class="wrapper">
-    <header class="site-header">
-    <a href="index.html" title="Ricarica la pagina"> 
-            <img src="assets/images/logo filmlog.png" class="site-logo" alt="logo" > 
-    </a>
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Cerca un film...">
-            <button id="search-button">Cerca</button>
-        </div>
-        <a href="profilo.html" class="tasto-profilo"><span class="icon-user"></span> </a>
- </header>
-    <main>
-            <section id="favorites-section">
-                <h2>I miei Preferiti</h2>
-                <div id="favorites-container" class="movies-grid"></div>
-            </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FilmLog</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/fonts/icone/css/user.css">
+        <link rel="stylesheet" href="assets/css/profilo.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="site-header">
+                <a href="index.html" title="Ricarica la pagina"> 
+                    <img src="assets/images/logo filmlog.png" 
+                         class="site-logo" 
+                         alt="logo"> 
+                </a>
+                <div class="search-container">
+                    <input type="search" 
+                           id="search-input" 
+                           placeholder="Cerca un film...">
+                    <button id="search-button">Cerca</button>
+                </div>
+                <a href="profilo.html" class="tasto-profilo">
+                    <span class="icon-user"></span>
+                </a>
+            </header>
 
-            <section id="watchlist-section">
-                <h2>La mia Watchlist</h2>
-                <div id="watchlist-container" class="movies-grid"></div>
-            </section>
+            <main>
+                <section id="favorites-section">
+                    <h2>I miei Preferiti</h2>
+                    <div id="favorites-container" class="movies-grid"></div>
+                </section>
+
+                <section id="watchlist-section">
+                    <h2>La mia Watchlist</h2>
+                    <div id="watchlist-container" class="movies-grid"></div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-content">
+                    <p>FilmLog &copy; 2025</p>
+                    <p>Realizzato da Bordoni Stefano</p>
+                </div>
+            </footer>
         </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <p>FilmLog &copy; 2025</p>
-            <p>Realizzato da Bordoni Stefano</p>
-        </div>
-    </footer>
-    <script src="assets/scripts/profilo.js"></script>
-</body>
-    </div>
+        
+        <script src="assets/scripts/profilo.js"></script>
+    </body>
 </html>
-

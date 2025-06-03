@@ -1,39 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FilmLog</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/fonts/icone/css/user.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/fonts/icone/css/user.css" />
+  </head>
+  <body>
     <header class="site-header">
-    <a href="index.html" title="Ricarica la pagina"> 
-            <img src="assets/images/logo filmlog.png" class="site-logo" alt="logo" > 
-    </a>
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Cerca un film...">
-            <button id="search-button">Cerca</button>
-        </div>
-        <a href="profilo.html" class="tasto-profilo"><span class="icon-user"></span> </a>
- </header>
+      <a href="index.html" title="Ricarica la pagina">
+        <img
+          src="assets/images/logo filmlog.png"
+          class="site-logo"
+          alt="logo"
+        />
+      </a>
+      <div class="search-container">
+        <input type="search" id="search-input" placeholder="Cerca un film..." />
+        <button id="search-button">Cerca</button>
+      </div>
+      <a href="profilo.html" class="tasto-profilo"
+        ><span class="icon-user"></span>
+      </a>
+    </header>
 
     <main>
-        <section id="film-primo-piano">
-            <div id="list"></div>
-        </section>
-        <section class="secondasezione">
-            <img src="assets/images/fightclub.png" alt="Il nuovo modo di guardare film" class="fight-club">
-        </section>
+      <section id="film-primo-piano">
+        <div id="list"></div>
+      </section>
+      <section class="liste">
+        <a href="profilo.html">
+          <button class="bottoni-home">
+            <img
+              src="assets/images/icona1.png"
+              alt="Preferiti"
+              class="icon"
+            />Film Preferiti
+          </button>
+        </a>
+        <a
+          href="profilo.html#watchlist-section"
+          onclick="scrollToWatchlist(event)"
+        >
+          <button class="bottoni-home">
+            <img
+              src="assets/images/icona2.png"
+              alt="Watchlist"
+              class="icon"
+            />Watchlist
+          </button>
+        </a>
+      </section>
+      <section class="sezionefoto">
+        <img
+          src="assets/images/fightclub.png"
+          alt="Il nuovo modo di guardare film"
+          class="fight-club"
+        />
+      </section>
     </main>
     <footer>
-        <div class="footer-content">
-            <p>FilmLog &copy; 2025</p>
-            <p>Realizzato da Bordoni Stefano</p>
-        </div>
+      <div class="footer-content">
+        <p>FilmLog &copy; 2025</p>
+        <p>Realizzato da Bordoni Stefano</p>
+      </div>
     </footer>
     <script src="assets/scripts/JSfile.js"></script>
-</body>
+  </body>
 </html>
-

@@ -9,23 +9,34 @@
   --text-color: #e0e0e0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/assets/fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Helvetica', sans-serif;
   background-color: var(--background-dark);
   color: var(--text-color);
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
 }
 
-/* Header Styles */
-.site-header {
+header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
   align-items: center;
-  padding: 0 var(--header-padding);
   background-color: var(--background-light);
-  height: 80px;
+  gap: 80px;
+  padding: 10px var(--header-padding);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 a{

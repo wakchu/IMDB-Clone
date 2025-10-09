@@ -23,4 +23,4 @@ The goal of this project was to:
 
 - This is not a full-featured IMDb replica  
 - Data is provided by TMDb API but the project is for **educational purposes only**  
-- Not affiliated with IMDb or TMDb  
+- Not affiliated with IMDb or TMDb.
